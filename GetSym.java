@@ -216,6 +216,7 @@ public class GetSym {
             }
             else{
                 symbol="Unknown";
+                break;
             }
             System.out.println(symbol);
         }
@@ -227,7 +228,7 @@ public class GetSym {
         GetSym temp=new GetSym();
         temp.readFileByLines(filename);
         temp.text=temp.getText();
-        System.out.println(temp.text);
+       // System.out.println(temp.text);
         temp.lex_analysis();
     }
 }
