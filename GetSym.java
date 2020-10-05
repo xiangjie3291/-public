@@ -227,6 +227,7 @@ public class GetSym {
         GetSym temp=new GetSym();
         temp.readFileByLines(filename);
         temp.text=temp.getText();
+        System.out.println(temp.text);
         temp.lex_analysis();
     }
 }
