@@ -157,8 +157,9 @@ public class GetSym {
         System.out.println("error");
     }
     public int lex_analysis(){
+        int flag=0;
         clearToken();
-        while(index<text.length()){
+        while(flag==0&&index<text.length()){
            // System.out.println(text.length());
             //System.out.println(index);
             clearToken();
@@ -216,7 +217,7 @@ public class GetSym {
             }
             else{
                 symbol="Unknown";
-                break;
+                flag=1;
             }
             System.out.println(symbol);
         }
