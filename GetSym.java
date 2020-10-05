@@ -223,12 +223,10 @@ public class GetSym {
     }
 
     public static void main(String[] args) {
-        String filename = "D:/hello.txt";
+        String filename = args[0];
         GetSym temp=new GetSym();
         temp.readFileByLines(filename);
         temp.text=temp.getText();
-        System.out.println(temp.text);
-        System.out.println();
         temp.lex_analysis();
     }
 }
